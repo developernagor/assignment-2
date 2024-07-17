@@ -1,0 +1,110 @@
+/* Google Fonts "Inter" links here */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* Google Fonts "Miama" links here */
+
+
+
+body{
+    font-family: "Inter", sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #000;
+    border: 2px solid red;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Shared Styles Here */
+
+
+
+
+
+
+/* Header Section Styles here */
+header{
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid palegreen; */
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.logo{
+    color: #E6533C;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* .mobile-menu{
+    display: none;
+} */
+
+
+.nav-menu{
+    border: 1px solid #ffffff25;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.nav-menu ul{
+    display: flex;
+    
+    
+    
+    justify-content: ;
+}
+
+.nav-menu ul li{
+    list-style: none;
+    margin-right: 20px;
+    padding: 10px 30px;
+    border-radius: 45px;
+}
+
+.nav-menu ul li:first-child{
+    background-color: #E6533C;
+
+}
+
+.nav-menu ul li a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
+
+/* Responsive styles starts here */
+
+/* Mobile Device Responsive Styles */
+@media screen and (max-width:576px) {
+    body{
+        max-width: 576px;
+        padding: 20px;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .mobile-menu{
+        font-size: 1rem;
+        font-weight: 900;
+        color: #FFF;
+        /* text-align: right; */
+    }
+    
+}
