@@ -22,17 +22,38 @@ body{
 
 /* Shared Styles Here */
 
-
+.btn-primary{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px 40px;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #E6533C;
+    border: none;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.btn-secondary{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 12px 40px;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
 
 
 
 
 /* Header Section Styles here */
-header{
+header, .banner{
     max-width: 1200px;
     margin: 0 auto;
     /* border: 1px solid palegreen; */
 }
+
 
 .navbar{
     display: flex;
@@ -86,7 +107,83 @@ header{
     font-weight: 400;
 }
 
+/* Banner Section Starts here */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    
+}
+.banner-content{
+    width: 50%;
+    padding-top: 80px;
+    margin-right: 80px;
+    /* border: 1px dotted rosybrown; */
+}
+.banner-title{
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 800;
+    line-height: 70px;
+    padding-bottom: 20px;
+}
+.banner-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
 
+.banner-image{
+    width: 40%;
+    padding-top: 40px;
+    position: relative;
+    /* text-align: left; */
+    /* display: flex; */
+    /* justify-content: flex-start; */
+
+    /* background-image: url(./images/images2.png); */
+}
+
+.workout, .tutorial{
+    background-color: rgba(255, 255, 255, 0.274);
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+.workout h2, .tutorial h2{
+    color: #fff;
+    font-size: 2.5rem;
+}
+.workout p, .tutorial p{
+color: rgba(255, 255, 255, 0.65);
+font-size: 1rem;
+}
+
+.workout{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
+.tutorial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    bottom: 30%;
+    left: -30%;
+}
+.tutorial-icon{
+    color: #E6533C;
+    background-color: #E6533C;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+}
 
 
 /* Responsive styles starts here */
@@ -106,5 +203,67 @@ header{
         color: #FFF;
         /* text-align: right; */
     }
+
+    .banner{
+        padding-top: 30px;
+        flex-direction: column;
+    }
+    .banner-content{
+        width: 80%;
+        padding-top: 0;
+    }
+    .banner-title{
+        font-size: 3rem;
+    }
+    .banner-btn-1{
+        width: 45%;
+        font-size: .8rem;
+        padding: 10px 20px;
+    }
+    .banner-btn-2{
+        width: 45%;
+        font-size: .8rem;
+        padding: 10px 20px;
+    }
+
+    .banner-image{
+        width: 100%;
+    }
+
+    /*  */
+    .workout, .tutorial{
+        width: 150px;
+    }
+    .workout h2, .tutorial h2{
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    .workout p, .tutorial p{
+        font-size: .7rem;
+    }
+    
+    .workout{
+        top: 20%;
+        left: 50%;
+    }
+    .tutorial{
+        gap: 10px;
+        bottom: 40%;
+        left: 5%;
+    }
+    .circle-icon{
+        display: none;
+    }
+    .tutorial-icon{
+        position: relative;
+    }
+    .play-icon{
+        color: #FFF;
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        
+    }
+    
     
 }
