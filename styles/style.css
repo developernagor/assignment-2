@@ -48,7 +48,7 @@ body{
 
 
 /* Header Section Styles here */
-header, .banner, .habit{
+header, .banner, .habit, .join-now{
     max-width: 1200px;
     margin: 0 auto;
     /* border: 1px solid palegreen; */
@@ -238,6 +238,61 @@ font-size: 1rem;
 /* Habit section styles ends here  */
 
 
+/* Join Now section styles starts here */
+.join-now{
+    display: flex;
+    /* gap: 30%; */
+    justify-content: space-between;
+    /* border: 1px solid indianred; */
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 10px;
+}
+.join-now-content{
+    width: 45%;
+    /* border: 1px solid blue; */
+    padding: 50px 80px;
+}
+.join-now-title{
+    font-size: 3rem;
+    color: #FFF;
+    padding-bottom: 15px;
+    line-height: 50px;
+    
+}
+.join-now-description{
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 24px;
+    padding-bottom: 25px;
+}
+.join-now-desktop-image{
+    width: 35%;
+    margin: 30px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.join-now-desktop-image img{
+    width: 100%;
+    transform: scale(3, 3);
+    position: absolute;
+    top: 100px;
+    left: -170px;
+}
+
+.join-now-mobile-image img{
+    display: none;
+}
+
+
+
+
+    
+
+/* Join Now section styles ends here */
+
+
 /* Responsive styles starts here */
 
 /* Mobile Device Responsive Styles */
@@ -245,6 +300,7 @@ font-size: 1rem;
     body{
         max-width: 576px;
         padding: 20px;
+        margin: 0 auto;
     }
     .nav-menu{
         display: none;
@@ -337,5 +393,51 @@ font-size: 1rem;
 
     .card-description{
         padding: 0 100px;
+    }
+
+    /* Join Now Section responsive styles */
+    .join-now{
+        flex-direction: column;
+        padding: 40px;
+    }
+    .join-now-content{
+        width: 100%;
+        padding: 0;
+    }
+    .join-now-title{
+        font-size: 2rem;
+    }
+    .join-now-btn{
+        width: 100%;
+    }
+
+    /* .join-now-desktop-image{
+        display: none;
+    } */
+    
+    
+
+    /* .join-now-mobile-image{
+        width: 100%;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+    .join-now-mobile-image img{
+        width: 100%;
+        border-radius: 15px;
+        
+    } */
+
+    .join-now-mobile-image {
+        width: 100%;
+        /* height: 225px; */
+        background-image: url(./images/run.jpg);
+        background-size: cover;
+        
+    }
+    .join-now-mobile-image img{
+        width: 100%;
+        display: block;
+        border-radius: 15px;
     }
 }
