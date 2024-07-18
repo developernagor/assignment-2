@@ -411,28 +411,16 @@ font-size: 1rem;
         width: 100%;
     }
 
-    /* .join-now-desktop-image{
+    .join-now-desktop-image{
         display: none;
-    } */
-    
-    
-
-    /* .join-now-mobile-image{
-        width: 100%;
-        margin-top: 30px;
-        border-radius: 10px;
     }
-    .join-now-mobile-image img{
-        width: 100%;
-        border-radius: 15px;
-        
-    } */
-
+    
     .join-now-mobile-image {
         width: 100%;
+        margin-top: 30px;
         /* height: 225px; */
-        background-image: url(./images/run.jpg);
-        background-size: cover;
+        /* background-image: url(./images/run.jpg); */
+        /* background-size: cover; */
         
     }
     .join-now-mobile-image img{
