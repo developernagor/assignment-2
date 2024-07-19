@@ -25,7 +25,7 @@ body{
 .btn-primary{
     font-size: 1rem;
     font-weight: 500;
-    padding: 12px 40px;
+    padding: 15px 50px;
     border-radius: 25px;
     color: #fff;
     background-color: #E6533C;
@@ -40,7 +40,7 @@ body{
     border-radius: 25px;
     color: #fff;
     background-color: #000;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     cursor: pointer;
 }
 
@@ -48,7 +48,13 @@ body{
 
 
 /* Header Section Styles here */
-header, .banner, .habit, .join-now{
+header,
+.banner,
+.habit,
+.join-now,
+.bmi-info,
+.our-team,
+.footer-content{
     max-width: 1200px;
     margin: 0 auto;
     /* border: 1px solid palegreen; */
@@ -285,10 +291,256 @@ font-size: 1rem;
     display: none;
 }
 
+/* BMI section styles starts here */
+.bmi{
+    width: ;
+}
+.bmi-content{
+    width: 650px;
+    margin:0 auto;
+    padding:60px;
+}
+.bmi-title{
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 15px;
+    color: #FFF;
 
+}
+.bmi-description, .bmi-calc-description{
+    font-size: .8rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 25px;
+}
+.bmi-info-parent{
+    background-color: rgba(34, 34, 34, 1);
+}
+.bmi-info{
+padding: 50px 0;
+display: flex;
+}
 
-
+.bmi-chart{
+    width: 50%;
+}
+.bmi-caption{
+    font-size: 1.8rem;
+    color: #FFF;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+table{
+    color: #fff;
+    text-align-last: left;
+    width: 350px;
+    /* border: 1px solid rgba(255, 255, 255, 0.1); */
+    /* padding: 5px; */
+}
+td,th{
+    padding: 10px;
+}
+.bmi-chart th, .bmi-chart td{
+    /* padding: 5px; */
+    /* border: 1px solid rgba(255, 255, 255, 0.1); */
+}
+.bmi-chart th{
+    font-size: 1rem;
+    font-weight: 500;
     
+}
+.bmi-chart td{
+    font-size: .8rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bmi-calculator{
+    width: 50%;
+}
+.bmi-calc-title{
+    font-size: 1.8rem;
+    color: #FFF;
+    font-weight: 700;
+    padding-bottom: 15px;
+
+}
+.bmi-calc-description{
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.bmi-calc-form form{
+    width: 540px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(2,270px); */
+    /* border: 1px solid yellow; */
+
+}
+input,select{
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.5);;
+    background-color: #313030;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+
+
+}
+#activity{
+    width: 515px;
+    display: block;
+}
+
+
+
+
+#bmi-btn{
+    width: 150px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #E6533C;
+    border: none;
+    cursor: pointer;
+}
+/* BMI section styles ends here */
+
+
+/* Our Team section styles starts here */
+.our-team{
+    padding: 100px 0;
+}
+.team-content{
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.team-title{
+    font-size: 3rem;
+    color: #FFF;
+    padding-bottom: 15px;
+
+}
+.team-description{
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 24px;
+}
+
+.team-member{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 20px;
+    background-color: rgba(34, 34, 34, 1);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.team-member-image{
+    width: 100%;
+    position: relative;
+    filter: brightness(.8);
+}
+.team-member-image img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.team-member-title{
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 500;
+    position: absolute;
+    top: 74%;
+    left: 5%;
+}
+
+.team-member-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+    font-weight: 500;
+    position: absolute;
+    top: 85%;
+    left: 5%;
+}
+
+
+
+/* Footer Section styles starts here */
+footer{
+    
+    background-color: rgba(34, 34, 34, 1);
+
+}
+.footer-content{
+    padding: 50px 0;
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.footer-column-1{
+    width: 50%;
+    padding-right: 100px;
+
+}
+.get-started{
+    width: 50%;
+    display: flex;
+}
+.footer-column-2{
+    width: 50%;
+
+}
+.footer-column-3{
+    width: 50%;
+
+}
+.footer-column-1-title{
+    color: #E6533C;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.footer-column-2-title, .footer-column-3-title{
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.footer-column-1-description{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.get-started-item{
+    color: rgba(255, 255, 255, 0.5);;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 35px;
+    list-style: none;
+}
+
+.copyright{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
 
 /* Join Now section styles ends here */
 
@@ -301,6 +553,9 @@ font-size: 1rem;
         max-width: 576px;
         padding: 20px;
         margin: 0 auto;
+    }
+    .logo{
+        font-size: 3rem;
     }
     .nav-menu{
         display: none;
@@ -317,21 +572,27 @@ font-size: 1rem;
         flex-direction: column;
     }
     .banner-content{
-        width: 80%;
+        width: 90%;
         padding-top: 0;
     }
     .banner-title{
-        font-size: 3rem;
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+    .banner-description{
+        font-size: 1.3rem;
+        line-height: 30px;
     }
     .banner-btn-1{
-        width: 45%;
-        font-size: .8rem;
-        padding: 10px 20px;
+        width: 48%;
+        font-size: 1.3rem;
+        padding: 15px 0;
+        margin-right: 5px;
     }
     .banner-btn-2{
-        width: 45%;
-        font-size: .8rem;
-        padding: 10px 20px;
+        width: 48%;
+        font-size: 1.3rem;
+        padding: 13px 0;
     }
 
     .banner-image{
@@ -341,10 +602,13 @@ font-size: 1rem;
     
     .workout, .tutorial{
         width: 150px;
+        padding: 10px 0;
     }
     .workout h2, .tutorial h2{
         color: #fff;
         font-size: 1.5rem;
+        padding-bottom: 5px;
+        
     }
     .workout p, .tutorial p{
         font-size: .7rem;
@@ -375,7 +639,7 @@ font-size: 1rem;
     
     /* Habit Section responsive styles */
     .habit{
-        padding: 0;
+        padding-top: 10px;
     }
     .habit-content{
         width: 100%;
@@ -387,7 +651,7 @@ font-size: 1rem;
         font-size: 2rem;
     }
     .habit-description{
-        font-size: .8rem;
+        font-size: 1rem;
         padding: 0 40px;
     }
 
@@ -405,10 +669,18 @@ font-size: 1rem;
         padding: 0;
     }
     .join-now-title{
+        width: 75%;
         font-size: 2rem;
+        line-height: 35px;
+        font-weight: 700;
+    }
+    .join-now-description{
+        font-size: 1rem;
     }
     .join-now-btn{
         width: 100%;
+        font-size: 1.2rem;
+        padding: 20px 15px;
     }
 
     .join-now-desktop-image{
@@ -428,4 +700,153 @@ font-size: 1rem;
         display: block;
         border-radius: 15px;
     }
+
+    /* BMI section */
+    .bmi{
+        width: 100%;
+    }
+    .bmi-content{
+        width: 100%;
+        /* margin:0 auto; */
+        padding:30px;
+    }
+    .bmi-title{
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #FFF;
+    }
+    .bmi-description{
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.5);
+        line-height: 25px;
+    }
+    .bmi-info{
+    width: 100%;
+    background-color: rgba(34, 34, 34, 1);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    }
+    .bmi-chart{
+        width: 100%;
+    }
+    .bmi-caption{
+        font-size: 1.8rem;
+        color: #FFF;
+        font-weight: 700;
+        padding-bottom: 30px;
+    }
+    table{
+        color: #fff;
+        text-align-last: left;
+        width: 100%;
+        /* border: 1px solid rgba(255, 255, 255, 0.1); */
+        padding: 5px;
+    }
+    tr{
+        padding: 10px;
+        border: 1px solid red;
+    }
+    
+    .bmi-chart th{
+        font-size: 1rem;
+        font-weight: 500;
+        
+    }
+    .bmi-chart td{
+        font-size: .8rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .bmi-calculator{
+        width: 100%;
+        /* padding: 30px; */
+    }
+    .bmi-calc-title{
+        font-size: 1.8rem;
+        color: #FFF;
+        font-weight: 700;
+        padding: 15px 0;
+    
+    }
+    .bmi-calc-description{
+        font-size: .8rem;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 400;
+        padding-bottom: 15px;
+    }
+    
+    
+    .bmi-calc-form form{
+        width: 100%;
+        /* display: grid; */
+        /* grid-template-columns: repeat(2,270px); */
+        /* border: 1px solid yellow; */
+    
+    }
+    input, select{
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #313030;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    display: inline-block;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    }
+    #activity{
+        width: 300px;
+        display: block;
+    }
+
+    #bmi-btn{
+        width: 200px;
+        font-size: 1.2rem;
+        border-radius: 30px;
+        padding: 15px 20px;
+    }
+    
+    .our-team{
+        padding: 60px 0;
+    }
+    .team-content{
+        width: 100%;
+
+    }
+    .team-title{
+        font-size: 2rem;
+        padding: 20px 0;
+    }
+    .team-description{
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+    .team-member{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-content{
+        flex-direction: column;
+        padding: 35px 0;
+    }
+    .footer-column-1-title{
+        font-size: 3rem;
+    }
+    .footer-column-1, .footer-column-2, .footer-column-3{
+        width: 100%;
+        padding: 30px;
+    }
+    .get-started{
+        flex-direction: column;
+        width: 100%;
+    }
+    .copyright{
+        padding: 40px 0;
+        font-size: 1.3rem;
+    }
+
 }
