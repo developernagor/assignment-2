@@ -9,7 +9,7 @@ body{
     max-width: 1440px;
     margin: 0 auto;
     background-color: #000;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 
@@ -44,14 +44,12 @@ body{
     cursor: pointer;
 }
 
-
-
-
 /* Header Section Styles here */
 header,
 .banner,
 .habit,
 .join-now,
+.exercise,
 .bmi-info,
 .our-team,
 .footer-content{
@@ -70,7 +68,7 @@ header,
 
 .logo{
     color: #E6533C;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 800;
     font-style: italic;
 }
@@ -291,10 +289,94 @@ font-size: 1rem;
     display: none;
 }
 
-/* BMI section styles starts here */
-.bmi{
-    width: ;
+
+
+/* Exercise Section styles starts here */
+.exercise{
+    text-align: center;
+    padding: 60px 0;
 }
+.exercise-content{
+    width: 650px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.exercise-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFF;
+    padding-bottom: 15px;
+}
+.exercise-description{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.274);
+    padding-bottom: 15px;
+    line-height: 30px;
+}
+.exercise-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 450px);
+    gap: 40px;
+    
+    
+}
+.exercise-item-1,
+.exercise-item-3,
+.exercise-item-5{
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    
+}
+.exercise-item-2,
+.exercise-item-4,
+.exercise-item-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 20px 50px;
+    
+}
+.exercise-item-1{
+    background-image: url(../images/person-1.png);
+    background-size: cover;
+}
+.exercise-item-3{
+    background-image: url(../images/person-2.png);
+}
+/* .exercise-item-5{
+    background-image: url(../images/person-3.png);
+} */
+.exercise-item-5{
+    background-image: url(../images/person-4.png);
+}
+.exercise-item-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.exercise-item-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFF;
+    padding-bottom: 15px;
+}
+.exercise-item-description{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.274);
+    padding-bottom: 15px;
+}
+/* Exercise Section styles ends here */
+
+/* BMI section styles starts here */
+
+
 .bmi-content{
     width: 650px;
     margin:0 auto;
@@ -307,8 +389,8 @@ font-size: 1rem;
     color: #FFF;
 
 }
-.bmi-description, .bmi-calc-description{
-    font-size: .8rem;
+.bmi-description{
+    font-size: 1rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
     line-height: 25px;
@@ -322,7 +404,7 @@ display: flex;
 }
 
 .bmi-chart{
-    width: 50%;
+    width: 45%;
 }
 .bmi-caption{
     font-size: 1.8rem;
@@ -330,33 +412,32 @@ display: flex;
     font-weight: 700;
     padding-bottom: 50px;
 }
-table{
-    color: #fff;
-    text-align-last: left;
-    width: 350px;
-    /* border: 1px solid rgba(255, 255, 255, 0.1); */
-    /* padding: 5px; */
-}
-td,th{
-    padding: 10px;
-}
-.bmi-chart th, .bmi-chart td{
-    /* padding: 5px; */
-    /* border: 1px solid rgba(255, 255, 255, 0.1); */
-}
-.bmi-chart th{
-    font-size: 1rem;
-    font-weight: 500;
+
+.bmi-table{
     
-}
-.bmi-chart td{
-    font-size: .8rem;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.5);
+    width: 70%;
+    border-collapse: collapse;
 }
 
+.bmi-table th, .bmi-table td{
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    padding: 10px;
+    color: FFF;
+    
+}
+th{
+    color: #FFF;
+    text-align: left;
+    font-size: 1.2rem;
+}
+td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+}
+
+
 .bmi-calculator{
-    width: 50%;
+    width: 55%;
 }
 .bmi-calc-title{
     font-size: 1.8rem;
@@ -366,26 +447,27 @@ td,th{
 
 }
 .bmi-calc-description{
-    font-size: .8rem;
+    font-size: 1rem;
     color: rgba(255, 255, 255, 0.5);
     font-weight: 400;
     padding-bottom: 15px;
+    line-height: 25px;
 }
 
 .bmi-calc-form form{
-    width: 540px;
+    width: 100%;
     /* display: grid; */
     /* grid-template-columns: repeat(2,270px); */
     /* border: 1px solid yellow; */
 
 }
 input,select{
-    padding: 10px;
-    color: rgba(255, 255, 255, 0.5);;
+    padding: 12px;
+    color: rgba(255, 255, 255, 0.5);
     background-color: #313030;
     border: none;
     border-radius: 5px;
-    width: 250px;
+    width: 48%;
     display: inline-block;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -394,18 +476,28 @@ input,select{
 
 }
 #activity{
-    width: 515px;
+    width: 98%;
     display: block;
+    color: rgba(255, 255, 255, 0.275);
 }
 
 
-
+input[type="text"] {
+    font-size: 1.1rem;
+}
+input[type="number"] {
+    font-size: 1.1rem;
+}
+select, value{
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.275);
+}
 
 #bmi-btn{
-    width: 150px;
-    font-size: 1rem;
+    width: 200px;
+    font-size: 1.5rem;
     font-weight: 600;
-    padding: 8px 20px;
+    padding: 12px 20px;
     border-radius: 15px;
     color: #fff;
     background-color: #E6533C;
@@ -487,7 +579,6 @@ footer{
 .footer-content{
     padding: 50px 0;
     display: flex;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .footer-column-1{
     width: 50%;
@@ -533,10 +624,13 @@ footer{
 }
 
 .copyright{
+    width: 90%;
+    margin: 0 auto;
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     text-align: center;
     padding: 20px 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.275);
 }
 
 
@@ -551,8 +645,21 @@ footer{
 @media screen and (max-width:576px) {
     body{
         max-width: 576px;
-        padding: 20px;
+        /* padding: 20px; */
         margin: 0 auto;
+    }
+    header,
+    .habit,
+    .join-now,
+    .bmi,
+    .our-team,
+    .exercise{
+        padding: 0 30px;
+    }
+    
+    .bmi-info-parent, footer{
+        max-width: 576px;
+        background-color: rgba(34, 34, 34, 1);
     }
     .logo{
         font-size: 3rem;
@@ -701,6 +808,16 @@ footer{
         border-radius: 15px;
     }
 
+
+    /* Exercise section responsive styles */
+    .exercise-content{
+        width: 100%;
+    }
+    .exercise-items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
     /* BMI section */
     .bmi{
         width: 100%;
@@ -738,7 +855,7 @@ footer{
         font-weight: 700;
         padding-bottom: 30px;
     }
-    table{
+    .bmi-table{
         color: #fff;
         text-align-last: left;
         width: 100%;
@@ -769,7 +886,8 @@ footer{
         font-size: 1.8rem;
         color: #FFF;
         font-weight: 700;
-        padding: 15px 0;
+        padding-top: 30px;
+        padding-bottom: 15px;
     
     }
     .bmi-calc-description{
@@ -787,22 +905,37 @@ footer{
         /* border: 1px solid yellow; */
     
     }
-    input, select{
-    padding: 10px;
-    color: rgba(255, 255, 255, 0.5);
-    background-color: #313030;
-    border: none;
-    border-radius: 5px;
-    width: 150px;
-    display: inline-block;
-    margin-right: 0px;
-    margin-bottom: 10px;
+    input,select{
+        padding: 12px;
+        color: rgba(255, 255, 255, 0.5);
+        background-color: #313030;
+        border: none;
+        border-radius: 5px;
+        width: 48%;
+        display: inline-block;
+        margin-right: 1%;
+        margin-bottom: 10px;
+        
+    
+    
     }
     #activity{
-        width: 300px;
+        width: 98%;
         display: block;
+        color: rgba(255, 255, 255, 0.275);
     }
-
+    
+    
+    input[type="text"] {
+        font-size: 1.1rem;
+    }
+    input[type="number"] {
+        font-size: 1.1rem;
+    }
+    select, value{
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.275);
+    }
     #bmi-btn{
         width: 200px;
         font-size: 1.2rem;
@@ -827,11 +960,12 @@ footer{
     }
     .team-member{
         grid-template-columns: repeat(1, 1fr);
+        padding: 0 30px;
     }
 
     .footer-content{
         flex-direction: column;
-        padding: 35px 0;
+        /* padding: 35px 0; */
     }
     .footer-column-1-title{
         font-size: 3rem;
@@ -845,8 +979,10 @@ footer{
         width: 100%;
     }
     .copyright{
-        padding: 40px 0;
+        padding: 30px 0;
         font-size: 1.3rem;
+        width: 85%;
+        margin: 0 auto;
+        border-top: 1px solid rgba(255, 255, 255, 0.275);
     }
-
-}
+    }
