@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 /* Google Fonts "Miama" links here */
 
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+
+
 
 body{
     font-family: "Inter", sans-serif;
@@ -119,28 +123,36 @@ header,
 }
 .banner-content{
     width: 50%;
-    padding-top: 80px;
-    margin-right: 80px;
+    padding-top: 100px;
+    margin-right: 100px;
     /* border: 1px dotted rosybrown; */
 }
 .banner-title{
     font-size: 4rem;
     color: #fff;
-    font-weight: 800;
-    line-height: 70px;
+    font-weight: 700;
+    line-height: 80px;
     padding-bottom: 20px;
+}
+#shape{
+    font-family: 'Miama', sans-serif;
+    font-size: 8rem;
+    font-weight: 100;
 }
 .banner-description{
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     font-weight: 400;
     line-height: 25px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+}
+.banner-btn-1-mobile{
+    display: none;
 }
 
 .banner-image{
     width: 40%;
-    padding-top: 40px;
+    /* padding-top: 40px; */
     position: relative;
     /* text-align: left; */
     /* display: flex; */
@@ -150,7 +162,7 @@ header,
 }
 
 .workout, .tutorial{
-    background-color: rgba(255, 255, 255, 0.274);
+    background-color: rgba(255, 255, 255, 0.164);
     width: 200px;
     text-align: center;
     border-radius: 10px;
@@ -176,7 +188,7 @@ font-size: 1rem;
     align-items: center;
     gap: 20px;
     position: absolute;
-    bottom: 30%;
+    bottom: 10%;
     left: -30%;
 }
 .tutorial-icon{
@@ -675,14 +687,12 @@ footer{
         max-width: 576px;
         background-color: rgba(34, 34, 34, 1);
     }
-    .logo{
-        font-size: 3rem;
-    }
+    
     .nav-menu{
         display: none;
     }
     .mobile-menu{
-        font-size: 1rem;
+        font-size: 1.8rem;
         font-weight: 900;
         color: #FFF;
         /* text-align: right; */
@@ -700,19 +710,36 @@ footer{
         font-size: 2.5rem;
         line-height: 50px;
     }
+    #shape{
+    font-size: 5rem;
+    font-weight: 100;
+    }
+    
     .banner-description{
         font-size: 1.3rem;
         line-height: 30px;
     }
-    .banner-btn-1{
+    
+    .banner-btn-1-desktop{
+        display: none;
+    }
+    .banner-btn-1-mobile {
+        display: inline-block;
+        font-weight: 500;    
+        border-radius: 25px;
+        color: #fff;
+        background-color: #E6533C;
+        border: none;  
+        cursor: pointer;
         width: 48%;
-        font-size: 1.3rem;
+        font-size: 1rem;
         padding: 15px 0;
         margin-right: 5px;
     }
+
     .banner-btn-2{
         width: 48%;
-        font-size: 1.3rem;
+        font-size: 1rem;
         padding: 13px 0;
     }
 
@@ -736,8 +763,8 @@ footer{
     }
     
     .workout{
-        top: 20%;
-        left: 50%;
+        top: 10%;
+        left: 55%;
     }
     .tutorial{
         gap: 10px;
@@ -760,7 +787,7 @@ footer{
     
     /* Habit Section responsive styles */
     .habit{
-        padding-top: 10px;
+        padding: 20px 0;
     }
     .habit-content{
         width: 100%;
@@ -783,7 +810,8 @@ footer{
     /* Join Now Section responsive styles */
     .join-now{
         flex-direction: column;
-        padding: 40px;
+        padding: 30px;
+        width: 90%;
     }
     .join-now-content{
         width: 100%;
@@ -801,7 +829,8 @@ footer{
     .join-now-btn{
         width: 100%;
         font-size: 1.2rem;
-        padding: 20px 15px;
+        padding: 15px;
+        margin: 0 auto;
     }
 
     .join-now-desktop-image{
@@ -846,7 +875,7 @@ footer{
     .bmi-content{
         width: 100%;
         /* margin:0 auto; */
-        padding:30px;
+        padding:30px 0;
     }
     .bmi-title{
         font-size: 2.5rem;
@@ -981,7 +1010,9 @@ footer{
     }
     .team-member{
         grid-template-columns: repeat(1, 1fr);
-        padding: 0 30px;
+        padding: 30px;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .footer-content{
@@ -1006,4 +1037,4 @@ footer{
         margin: 0 auto;
         border-top: 1px solid rgba(255, 255, 255, 0.275);
     }
-    }
+}
