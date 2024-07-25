@@ -3,7 +3,6 @@
 /* Google Fonts "Miama" links here */
 
 
-
 body{
     font-family: "Inter", sans-serif;
     max-width: 1440px;
@@ -316,39 +315,53 @@ font-size: 1rem;
 }
 .exercise-items{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 450px);
-    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 350px);
+    gap: 15px;
     
     
 }
-.exercise-item-1,
+/* .exercise-item-1,
 .exercise-item-3,
-.exercise-item-5{
+.exercise-item-5,
+.exercise-item-7{
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     
-}
+} */
 .exercise-item-2,
 .exercise-item-4,
-.exercise-item-6{
+.exercise-item-6,
+.exercise-item-8{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
-    padding: 20px 50px;
+    padding: 20px;
     
 }
 .exercise-item-1{
-    background-image: url(../images/person-1.png);
-    background-size: cover;
+    /* background-image: url(../images/Boxing-Workout.png); */
+    background-size: ;
 }
 .exercise-item-3{
-    background-image: url(../images/person-2.png);
+    /* background-image: url(../images/spinning-2.png); */
+    /* background-size: contain; */
+    
 }
+
+.exercise-item-1 img,
+.exercise-item-3 img,
+.exercise-item-5 img,
+.exercise-item-7 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
 /* .exercise-item-5{
     background-image: url(../images/person-3.png);
 } */
@@ -359,6 +372,7 @@ font-size: 1rem;
     width: 100px;
     height: 100px;
     margin-bottom: 20px;
+    /* background: transparent; */
 }
 .exercise-item-title{
     font-size: 2.5rem;
@@ -815,6 +829,13 @@ footer{
     }
     .exercise-items{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .exercise-title{
+        font-size: 2rem;
+    }
+    .exercise-description{
+        font-size: 1rem;
+        
     }
 
 
