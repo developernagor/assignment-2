@@ -312,93 +312,120 @@ font-size: 1rem;
 
 
 /* Exercise Section styles starts here */
+		
 .exercise{
-    text-align: center;
-    padding: 60px 0;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    /* border: 2px solid red; */
+    background-color: #000;
 }
+
 .exercise-content{
     width: 650px;
     margin: 0 auto;
-    padding: 30px 0;
+    text-align: center;
 }
 .exercise-title{
     font-size: 3rem;
-    font-weight: 700;
+    padding-bottom: 20px;
     color: #FFF;
-    padding-bottom: 15px;
+    font-weight: 600;
 }
 .exercise-description{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.274);
-    padding-bottom: 15px;
-    line-height: 30px;
+    color: #797676;
+    padding-bottom: 50px;
 }
 .exercise-items{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 350px);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 100px);
     gap: 15px;
-    
-    
 }
 
-.exercise-item-2,
+.exercise-item-1,
 .exercise-item-4,
-.exercise-item-6,
+.exercise-item-5,
 .exercise-item-8{
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    /* background-position: top; */
+    border: 1px solid #dddddd35;
+}
+.exercise-item-1{
+    background-image: url(../images/Boxing-Workout-2.png);
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 3;
+}
+.exercise-item-2{
+    grid-column: 7 / span 6;
+    grid-row: 1 / span 3;
+    padding: 30px;
+    border-radius: 15px;
+}
+.exercise-item-2,
+.exercise-item-3,
+.exercise-item-6,
+.exercise-item-7{
+    padding: 120px;
+    border-radius: 15px;
+    background-color: rgba(34, 34, 34, 1);
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
-    padding: 20px;
-    
 }
-.exercise-item-1{
-    /* background-image: url(../images/Boxing-Workout.png); */
-    background-size: ;
-}
+
 .exercise-item-3{
-    /* background-image: url(../images/spinning-2.png); */
-    /* background-size: contain; */
-    
+    grid-column: 1 / span 6;
+    grid-row: 4 / span 3;
+}
+.exercise-item-4{
+    background-image: url(../images/spinning-1.png);
+    grid-column: 7 / span 6;
+    grid-row: 4 / span 3;
 }
 
-.exercise-item-1 img,
-.exercise-item-3 img,
-.exercise-item-5 img,
-.exercise-item-7 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-/* .exercise-item-5{
-    background-image: url(../images/person-3.png);
-} */
 .exercise-item-5{
-    background-image: url(../images/person-4.png);
+    background-image: url(../images/Upper-body.png);
+    grid-column: 1 / span 6;
+    grid-row: 7 / span 3;
 }
-.exercise-item-image {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 20px;
-    /* background: transparent; */
+.exercise-item-6{
+    grid-column: 7 / span 6;
+    grid-row: 7 / span 3;
+    padding: 30px;
+    border-radius: 15px;
 }
+.exercise-item-7{
+    grid-column: 1 / span 6;
+    grid-row: 10 / span 3;
+    padding: 30px;
+    border-radius: 15px;
+}
+.exercise-item-8{
+    background-image: url(../images/Plank-Exercise.png);
+    grid-column: 7 / span 6;
+    grid-row: 10 / span 3;
+}
+
 .exercise-item-title{
     font-size: 2.5rem;
-    font-weight: 700;
-    color: #FFF;
+    color: #fff;
     padding-bottom: 15px;
 }
+
 .exercise-item-description{
     font-size: 1.5rem;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.274);
-    padding-bottom: 15px;
+    color: #797676;
+    line-height: 30px;
 }
+
+
 /* Exercise Section styles ends here */
 
 /* BMI section styles starts here */
