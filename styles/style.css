@@ -48,11 +48,13 @@ body{
     cursor: pointer;
 }
 
+
 /* Header Section Styles here */
 header,
 .banner,
 .habit,
 .join-now,
+.training,
 .exercise,
 .bmi-info,
 .our-team,
@@ -309,7 +311,144 @@ font-size: 1rem;
     display: none;
 }
 
+/* Training section styles starts here */
+    
+.training {
+    
+    padding: 50px 0;
+}
 
+.training-content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.training-title {
+    color: #FFF;
+    font-size: 3rem;
+    padding-bottom: 25px;
+}
+
+.training-description {
+    color: #797676;
+    font-size: 1.2rem;
+    padding-bottom: 40px;
+}
+
+.training-team-items{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+.training-team-1{
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 6;
+    position: relative;
+    background-size: cover;
+    background-image: linear-gradient( rgba(6, 255, 209, 0.404), rgba(6, 255, 209, 0.371)), url(../images/exercise1.jpg);
+    background-position: center top;
+    
+}
+
+.training-team-description-1 {
+    position: absolute;
+    left: 40px;
+    bottom: 25px;
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.training-team-2{
+    grid-column: 4 / span 6;
+    grid-row: 1 / span 6;
+    position: relative;
+    background-image: linear-gradient( rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3)), url(../images/exercise2.png);
+    background-size: cover;
+    background-position: center;
+}
+.training-team-description-2{
+    position: absolute;
+    left: 40px;
+    top: 25px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.training-team-3{
+    grid-column: 10 / span 3;
+    grid-row: 1 / span 6;
+    position: relative;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/exercise3.png);
+    background-size: cover;
+    background-position: bottom center;
+}
+.training-team-description-3{
+    position: absolute;
+    left: 40px;
+    bottom: 25px;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 220px;
+}
+.training-team-description-4-mobile,
+.training-team-description-5-mobile{
+    display: none;
+}
+.training-team-4{
+    grid-column: 1 / span 5;
+    grid-row: 7 / span 6;
+    position: relative;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/exercise4.png);
+    background-size: cover;
+    background-position: center;
+}
+.training-team-description-4{
+    position: absolute;
+    left: 260px;
+    top: 25px;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 220px;
+}
+.training-team-5{
+    grid-column: 6 / span 3;
+    grid-row: 7 / span 6;
+    position: relative;
+    background-image: linear-gradient( rgba(66, 255, 0, 0.3), rgba(66, 255, 0, 0.3)), url(../images/exercise5.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+    
+}
+.training-team-description-5{
+    position: absolute;
+    left: 40px;
+    bottom: 25px;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 220px;
+}
+.training-team-6{
+    grid-column: 9 / span 4;
+    grid-row: 7 / span 6;
+    position: relative;
+    background-image: linear-gradient( rgba(0, 71, 255, 0.3), rgba(0, 71, 255, 0.3)), url(../images/exercise6.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.training-team-description-6{
+    position: absolute;
+    left: 40px;
+    bottom: 25px;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 220px;
+}
+/* Training section styles ends here */
 
 /* Exercise Section styles starts here */
 		
@@ -883,6 +1022,95 @@ footer{
         border-radius: 15px;
     }
 
+/* Training section styles starts here */
+    
+.training {
+    width: 100%;
+    padding: 30px;
+}
+
+/* .training-content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+} */
+
+/* .training-title {
+    color: #FFF;
+    font-size: 3rem;
+    padding-bottom: 25px;
+} */
+
+.training-description {
+    line-height: 30px;
+}
+
+.training-team-items{
+    height: 300px;
+}
+.training-team-1{
+    grid-column: 1 / span 6;
+}
+
+.training-team-description-1 {
+    left: 20px;
+    font-size: 1rem;
+}
+.training-team-2{
+    grid-column: 7 / span 6;
+    background-position: center;
+}
+.training-team-description-2{
+    left: 20px;
+    top: 20px;
+    font-size: 1rem;
+}
+.training-team-3{
+    display: none;
+}
+
+.training-team-4{
+    grid-column: 1 / span 5;
+}
+
+.training-team-description-4,
+.training-team-description-5{
+    display: none;
+}
+
+
+.training-team-description-4-mobile{
+    display: block;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: #fff;
+    font-size: 1rem;
+    
+}
+.training-team-description-5-mobile {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: #fff;
+    font-size: 1rem;
+    width: 220px;
+    display: block;
+}
+
+.training-team-5{
+    grid-column: 6 / span 7;
+}
+
+.training-team-description-5{
+    display: none;
+}
+.training-team-6{
+    display: none;
+}
+
+/* Training section styles ends here */
+    
 
     /* Exercise section responsive styles */
     .exercise-content{
@@ -1111,6 +1339,29 @@ footer{
         width: 90%;
         margin: 0 auto;
     }
+    .team-image-1{
+        display: none;
+        
+    }
+    .team-image-2{
+        order: 1;
+    }
+    .team-image-3{
+        
+        order: 3;
+    }
+    .team-image-4{
+        display: none;
+        
+    }
+    
+    .team-image-5{
+        order: 2;
+    }
+    .team-image-6{
+        order: 4;
+    }
+
     .team-member-title{
         font-size: 1.5rem;
     }
