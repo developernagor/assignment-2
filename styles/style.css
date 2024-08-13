@@ -50,7 +50,7 @@ body{
 
 
 /* Header Section Styles here */
-header,
+
 .banner,
 .habit,
 .join-now,
@@ -64,9 +64,11 @@ header,
     /* border: 1px solid palegreen; */
 }
 
-/* .banner{
-    background-image: linear-gradient(180deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
-} */
+header{
+    max-width: 1440px;
+    padding: 0 120px;
+    background-image: linear-gradient(to bottom, #000000, #ffffff20, #ffffff20, #000000);
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -1028,18 +1030,6 @@ footer{
     width: 100%;
     padding: 30px;
 }
-
-/* .training-content {
-    width: 100%;
-    margin: 0 auto;
-    text-align: left;
-} */
-
-/* .training-title {
-    color: #FFF;
-    font-size: 3rem;
-    padding-bottom: 25px;
-} */
 
 .training-description {
     line-height: 30px;
